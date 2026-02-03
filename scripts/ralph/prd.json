@@ -16,28 +16,28 @@
       "phase": "PHASE_1_CONTRACTS",
       "title": "BarrelToken ERC20 contract",
       "description": "Basic ERC20 token for staking. Mintable by owner for initial distribution.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "CON-002",
       "phase": "PHASE_1_CONTRACTS",
       "title": "BarrelVault treasury contract",
       "description": "Holds trading capital. Tracks agent balances. Executes approved trades.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "CON-003",
       "phase": "PHASE_1_CONTRACTS",
       "title": "BarrelConsensus improvements",
       "description": "Add proposal expiry cleanup, slash mechanics, reward distribution.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "CON-004",
       "phase": "PHASE_1_CONTRACTS",
       "title": "Contract tests with Foundry",
       "description": "Full test suite for consensus flow: propose → stake → execute/expire.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "AGT-001",
