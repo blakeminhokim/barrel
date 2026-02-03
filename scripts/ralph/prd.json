@@ -44,35 +44,35 @@
       "phase": "PHASE_2_AGENTS",
       "title": "Pyth price feed integration",
       "description": "Mo agent fetches real price data from Pyth oracles on Monad.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "AGT-002",
       "phase": "PHASE_2_AGENTS",
       "title": "X/social sentiment integration",
       "description": "Vox agent queries X API (via xAI) for token sentiment signals.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "AGT-003",
       "phase": "PHASE_2_AGENTS",
       "title": "Nad.fun launch detection",
       "description": "Degen agent monitors Nad.fun for new token deployments via contract events.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "AGT-004",
       "phase": "PHASE_2_AGENTS",
       "title": "Contract interaction layer",
       "description": "Agents can submit proposals and stakes to BarrelConsensus contract.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "AGT-005",
       "phase": "PHASE_2_AGENTS",
       "title": "Agent orchestrator improvements",
       "description": "Real market data flow, proper error handling, consensus state tracking.",
-      "passes": false
+      "passes": true
     },
     {
       "id": "DSH-001",

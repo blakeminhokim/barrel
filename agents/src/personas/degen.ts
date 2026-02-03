@@ -32,7 +32,7 @@ export class DegenAgent extends BaseAgent {
     const { token, priceChange24h, volume24h, metadata } = signal;
     
     // Degen loves NEW tokens (check metadata for launch time or bonding curve status)
-    const isNewLaunch = metadata?.isNadFunLaunch || metadata?.ageHours < 24;
+    const isNewLaunch = metadata?.isNadFunLaunch || (metadata?.ageHours as number) < 24;
     const isOnBondingCurve = metadata?.bondingCurveProgress !== undefined;
     
     // Fresh Nad.fun launch = instant interest
