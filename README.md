@@ -6,11 +6,11 @@
 
 ## 🐒 The Monkeys
 
-| Agent | Strategy | Personality |
-|-------|----------|-------------|
-| **Mo** | Momentum | Aggressive, trend-chasing, FOMO-driven |
-| **Val** | Value | Patient, contrarian, fundamentals-focused |
-| **Vox** | Sentiment | Reactive, social signals, whale-watching |
+| Agent | Strategy | Data Source | Monad Integration |
+|-------|----------|-------------|-------------------|
+| **Mo** 🐒 | Momentum | DEX price/volume | Pyth oracles, Uniswap/Kuru |
+| **Vox** 📡 | Sentiment | X/CT signals | X API, social feeds |
+| **Degen** 🎰 | YOLO | New launches | **Nad.fun bonding curves** |
 
 ## ⚡ Why Monad?
 
