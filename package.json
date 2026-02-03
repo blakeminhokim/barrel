@@ -1,0 +1,18 @@
+{
+  "name": "barrel",
+  "version": "0.1.0",
+  "description": "Swarm intelligence trading protocol on Monad",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "deploy:testnet": "cd contracts && forge script script/Deploy.s.sol --rpc-url $MONAD_RPC --broadcast",
+    "dev:agents": "cd agents && pnpm dev",
+    "dev:dashboard": "cd dashboard && pnpm dev"
+  },
+  "keywords": ["monad", "defi", "ai", "trading", "swarm"],
+  "author": "Blake & Caesar",
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0"
+}
