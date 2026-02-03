@@ -1,0 +1,141 @@
+{
+  "name": "Barrel",
+  "description": "Swarm intelligence trading protocol on Monad - AI agents reach consensus through stake-weighted voting",
+  "branchName": "ralph/mvp",
+  "deadline": "2026-02-15",
+  "status": "IN_PROGRESS",
+  "phases": {
+    "PHASE_1_CONTRACTS": "Smart contracts + core consensus",
+    "PHASE_2_AGENTS": "Agent infrastructure + data feeds",
+    "PHASE_3_DASHBOARD": "Frontend visualization",
+    "PHASE_4_INTEGRATION": "End-to-end flow + token launch"
+  },
+  "userStories": [
+    {
+      "id": "CON-001",
+      "phase": "PHASE_1_CONTRACTS",
+      "title": "BarrelToken ERC20 contract",
+      "description": "Basic ERC20 token for staking. Mintable by owner for initial distribution.",
+      "passes": false
+    },
+    {
+      "id": "CON-002",
+      "phase": "PHASE_1_CONTRACTS",
+      "title": "BarrelVault treasury contract",
+      "description": "Holds trading capital. Tracks agent balances. Executes approved trades.",
+      "passes": false
+    },
+    {
+      "id": "CON-003",
+      "phase": "PHASE_1_CONTRACTS",
+      "title": "BarrelConsensus improvements",
+      "description": "Add proposal expiry cleanup, slash mechanics, reward distribution.",
+      "passes": false
+    },
+    {
+      "id": "CON-004",
+      "phase": "PHASE_1_CONTRACTS",
+      "title": "Contract tests with Foundry",
+      "description": "Full test suite for consensus flow: propose → stake → execute/expire.",
+      "passes": false
+    },
+    {
+      "id": "AGT-001",
+      "phase": "PHASE_2_AGENTS",
+      "title": "Pyth price feed integration",
+      "description": "Mo agent fetches real price data from Pyth oracles on Monad.",
+      "passes": false
+    },
+    {
+      "id": "AGT-002",
+      "phase": "PHASE_2_AGENTS",
+      "title": "X/social sentiment integration",
+      "description": "Vox agent queries X API (via xAI) for token sentiment signals.",
+      "passes": false
+    },
+    {
+      "id": "AGT-003",
+      "phase": "PHASE_2_AGENTS",
+      "title": "Nad.fun launch detection",
+      "description": "Degen agent monitors Nad.fun for new token deployments via contract events.",
+      "passes": false
+    },
+    {
+      "id": "AGT-004",
+      "phase": "PHASE_2_AGENTS",
+      "title": "Contract interaction layer",
+      "description": "Agents can submit proposals and stakes to BarrelConsensus contract.",
+      "passes": false
+    },
+    {
+      "id": "AGT-005",
+      "phase": "PHASE_2_AGENTS",
+      "title": "Agent orchestrator improvements",
+      "description": "Real market data flow, proper error handling, consensus state tracking.",
+      "passes": false
+    },
+    {
+      "id": "DSH-001",
+      "phase": "PHASE_3_DASHBOARD",
+      "title": "Dashboard scaffold",
+      "description": "Vite + React + TailwindCSS with dark theme matching Barrel brand.",
+      "passes": false
+    },
+    {
+      "id": "DSH-002",
+      "phase": "PHASE_3_DASHBOARD",
+      "title": "Agent status cards",
+      "description": "Show each agent (Mo, Vox, Degen) with stake balance, recent activity.",
+      "passes": false
+    },
+    {
+      "id": "DSH-003",
+      "phase": "PHASE_3_DASHBOARD",
+      "title": "Live consensus visualization",
+      "description": "THE HERO FEATURE: Real-time view of proposals, stakes, agent arguments.",
+      "passes": false
+    },
+    {
+      "id": "DSH-004",
+      "phase": "PHASE_3_DASHBOARD",
+      "title": "Trade history feed",
+      "description": "List of executed trades with P&L, which agents voted how.",
+      "passes": false
+    },
+    {
+      "id": "INT-001",
+      "phase": "PHASE_4_INTEGRATION",
+      "title": "End-to-end consensus flow",
+      "description": "Full loop: signal → proposal → stakes → consensus → execution.",
+      "passes": false
+    },
+    {
+      "id": "INT-002",
+      "phase": "PHASE_4_INTEGRATION",
+      "title": "DEX integration for trade execution",
+      "description": "BarrelVault executes trades via Monad DEX aggregator (Fibrous/KyberSwap).",
+      "passes": false
+    },
+    {
+      "id": "INT-003",
+      "phase": "PHASE_4_INTEGRATION",
+      "title": "Deployment scripts",
+      "description": "Deploy contracts to Monad testnet/mainnet. Document addresses.",
+      "passes": false
+    },
+    {
+      "id": "POL-001",
+      "phase": "PHASE_4_INTEGRATION",
+      "title": "Landing page",
+      "description": "Public landing with concept explanation, link to dashboard, socials.",
+      "passes": false
+    },
+    {
+      "id": "POL-002",
+      "phase": "PHASE_4_INTEGRATION",
+      "title": "Demo polish and agent personalities",
+      "description": "Agent chat bubbles, personality in UI, animations, meme potential.",
+      "passes": false
+    }
+  ]
+}

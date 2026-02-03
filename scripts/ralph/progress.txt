@@ -1,0 +1,27 @@
+# Ralph Progress Log
+Started: 2026-02-03
+Branch: ralph/mvp
+Project: Barrel - Swarm Trading on Monad
+
+---
+
+## Phase Overview
+
+| Phase | Stories | Status |
+|-------|---------|--------|
+| PHASE_1_CONTRACTS | 4 | 🔴 Not started |
+| PHASE_2_AGENTS | 5 | 🔴 Not started |
+| PHASE_3_DASHBOARD | 4 | 🔴 Not started |
+| PHASE_4_INTEGRATION | 5 | 🔴 Not started |
+
+---
+
+## Completed Stories
+
+(none yet)
+
+---
+
+## Learnings
+
+(will be populated as Ralph works)
