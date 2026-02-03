@@ -9,19 +9,60 @@ Project: Barrel - Swarm Trading on Monad
 
 | Phase | Stories | Status |
 |-------|---------|--------|
-| PHASE_1_CONTRACTS | 4 | 🔴 Not started |
-| PHASE_2_AGENTS | 5 | 🔴 Not started |
+| PHASE_1_CONTRACTS | 4 | ✅ Complete |
+| PHASE_2_AGENTS | 5 | ✅ Complete |
 | PHASE_3_DASHBOARD | 4 | 🔴 Not started |
 | PHASE_4_INTEGRATION | 5 | 🔴 Not started |
+
+**Progress: 9/18 stories (50%)**
 
 ---
 
 ## Completed Stories
 
-(none yet)
+### Phase 1: Contracts ✅
+- [x] CON-001: BarrelToken ERC20 (mintable, 18 decimals)
+- [x] CON-002: BarrelVault treasury (trade execution, DEX integration)
+- [x] CON-003: BarrelConsensus improvements (slash/reward, cooldowns)
+- [x] CON-004: Foundry tests (20 tests passing)
+
+### Phase 2: Agents ✅
+- [x] AGT-001: Pyth price feeds (ETH/BTC/SOL)
+- [x] AGT-002: X/sentiment via xAI API
+- [x] AGT-003: Nad.fun launch detection (event watching)
+- [x] AGT-004: Contract interaction layer (viem)
+- [x] AGT-005: Orchestrator with full data flow
 
 ---
 
 ## Learnings
 
-(will be populated as Ralph works)
+### Contracts
+- Foundry forge-std v1.14.0 requires explicit install
+- 66% quorum means consensus can trigger before all agents vote
+- Slash mechanics create real consequences for bad calls
+
+### Agents
+- viem requires explicit chain in writeContract calls
+- Pyth API returns price with exponent, needs parsing
+- xAI x_search is agentic (server-side reasoning loop)
+- Keep TypeScript types loose for external API responses
+
+---
+
+## Test Results
+
+### Contracts
+```
+forge test: 20 tests passed ✅
+```
+
+### Agents
+```
+npm run build: TypeScript compiles ✅
+```
+
+---
+
+Updated: 2026-02-03
+By: Caesar ⚔️
